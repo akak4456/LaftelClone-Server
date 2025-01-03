@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: LaftelClone-Server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/laftel
+    username: akak4456
+    password: asdfASDF1234!#
+
+mybatis:
+  configuration:
+    multiple-result-sets-enabled: false
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    jdbc-type-for-null: varchar
+    default-fetch-size: 500
+  mapper-locations:
+    - classpath:mapper/*.xml
